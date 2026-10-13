@@ -1,23 +1,146 @@
 aid: ionos
+
 name: IONOS
-description: 'IONOS is a company surfaced via the API Evangelist harvest backlog (source: tag-qc) and
-  added to the network as a stub for full-pipeline profiling.'
+
+image: https://cs-us.uicdn.net/fileadmin/og_image/logo.png
+
+description: IONOS is a global cloud provider offering web hosting, domain registration, cloud servers, and AI-driven services. It serves businesses
+  of all sizes with scalable infrastructure, managed services, and a suite of tools for website creation, e‑commerce, and digital transformation.
+  IONOS emphasizes security, performance, and customer support, providing solutions ranging from shared hosting to dedicated servers and GPU‑accelerated
+  cloud instances.
+
 url: https://raw.githubusercontent.com/api-evangelist/ionos/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:tag-qc
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-13 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-13'
+
 modified: '2026-10-13'
+
 tags:
 - Company
-apis: []
+- Cloud
+- Hosting
+- Domains
+- AI
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Vendors
+  url: vendors/ionos-vendors.yml
+- type: Spectral
+  url: rules/ionos-rules.yml
+- type: JSONLD
+  url: json-ld/ionos-context.jsonld
+- type: Vocabulary
+  url: vocabulary/ionos-vocabulary.yml
+- type: DataModel
+  url: data-model/ionos-data-model.yml
+- type: ChangeLog
+  url: changelog/ionos-changelog.yml
+- type: Authentication
+  url: authentication/ionos-authentication.yml
+- type: Conformance
+  url: conformance/ionos-conformance.yml
+- type: LLMsTxt
+  url: llms/ionos-llms.txt
+- type: SecurityTxt
+  url: well-known/ionos-security.txt
+- type: SecurityTxt
+  url: well-known/ionos-partnernetwork-security.txt
+- type: SecurityTxt
+  url: well-known/ionos-id-security.txt
+- type: SecurityTxt
+  url: well-known/ionos-feedback-security.txt
+- type: SecurityTxt
+  url: well-known/ionos-dcd-security.txt
+- type: SecurityTxt
+  url: well-known/ionos-cloud-security.txt
+- type: SecurityTxt
+  url: well-known/ionos-api-security.txt
+- type: WellKnown
+  url: well-known/ionos-well-known.yml
+- type: Hosts
+  url: hosts/ionos-hosts.yml
+- type: SDKs
+  url: packages/ionos-packages.yml
+- type: Packages
+  url: packages/ionos-packages.yml
+- type: TermsOfService
+  url: https://www.ionos.com/terms-gtc/terms-privacy/
+- type: Support
+  url: https://www.ionos.com/help/
+- type: Security
+  url: https://www.ionos.com/security/ev-ssl
+- type: PrivacyPolicy
+  url: https://www.ionos.com/terms-gtc/privacy-policy
+- type: Newsroom
+  url: https://www.ionos.com/newsroom/
+- type: Leadership
+  url: https://www.ionos.com/management
+- type: ChangeLog
+  url: https://docs.ionos.com/cloud/release-notes/previous-releases/2026/august-2026
+- type: APIReference
+  url: https://docs.ionos.com/cloud/api-reference
+- type: GettingStarted
+  url: https://docs.ionos.com/cloud/ai/mcp-server/quick-start
+- type: Documentation
+  url: https://docs.ionos.com/
+- type: VulnerabilityDisclosure
+  url: security/ionos-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/ionos-domain-security.yml
 - type: Website
   url: https://www.ionos.com
+
+apis:
+- name: IONOS Cloud API
+  description: Cloud API for managing IONOS resources
+  humanURL: https://docs.ionos.com/cloud/api-reference
+  aid: ionos:ionos-cloud-api
+- aid: ionos:ionos-api
+  name: IONOS API
+  description: 'IONOS API as documented publicly: 7 operations. Contract generated from the documentation by API Evangelist (2026-10-13); not
+
+    the provider''s own document.'
+  humanURL: https://api.ionos.com/docs/cloud/v6
+  baseURL: https://dcd.ionos.com
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/ionos-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/ionos-get-cloud-databases-postgresql-api-v1-api-v1-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/ionos-get-telemetry-api-v1-query-range-response-schema.json
+  - type: JSONSchema
+    url: json-schema/ionos-get-datacenters-response-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: The IONOS Cloud API documentation provides only HTML pages without a downloadable OpenAPI or other machine‑readable contract.
+  evidence:
+  - url: https://api.ionos.com/openapi.json
+    status: 404
+  - url: https://docs.ionos.com/cloud/api-reference
+    status: 200
+  checked: '2026-10-13'
+x-enrichment:
+  date: '2026-10-13'
+  status: enriched
+  artifacts_added: 29
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

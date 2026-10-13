@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/ionos/main/json-schema/ionos-get-telemetry-api-v1-query-range-response-schema.json",
+  "title": "GetTelemetryApiV1QueryRangeResponse",
+  "x-generated": "2026-10-13",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/ionos-openapi-generated.yml#/components/schemas/GetTelemetryApiV1QueryRangeResponse",
+  "type": "object",
+  "properties": {
+    "resultType": {
+      "type": "string"
+    },
+    "result": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "metric": {
+            "type": "object",
+            "properties": {
+              "__name__": {
+                "type": "string"
+              },
+              "cloud_service": {
+                "type": "string"
+              },
+              "contract_number": {
+                "type": "string"
+              },
+              "instance": {
+                "type": "string"
+              },
+              "postgres_cluster": {
+                "type": "string"
+              },
+              "role": {
+                "type": "string"
+              }
+            }
+          },
+          "values": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

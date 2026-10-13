@@ -1,0 +1,59 @@
+generated: '2026-10-13'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.ionos.com/cloud/release-notes/october-2026.md
+sources:
+- https://docs.ionos.com/cloud/release-notes/october-2026.md
+- https://docs.ionos.com/cloud/release-notes/previous-releases.md
+- https://docs.ionos.com/cloud/release-notes/previous-releases/2026.md
+- https://docs.ionos.com/cloud/release-notes/previous-releases/2026/september-2026.md
+entries:
+- breaking: false
+  highlights:
+  - The AI Model Hub rate limit headers now follow the OpenAI convention.
+  - '`X-RateLimit-Remaining-Requests` counts down from the base limit and leaves out the burst allowance.'
+  - At the default limit of 5 requests per second, the first request now returns `4` instead of `9`.
+  - A `429 Too Many Requests` response now includes a `Retry-After` header with the number of seconds to wait before retrying.
+  date: '2026-10-12'
+- breaking: false
+  highlights:
+  - GPU Cloud Virtual Machines are now available in the region **Worcester (UK)** `gb/bhx`.
+  - GPU VMs in both locations, **Frankfurt** and **Worcester** are available to all customers starting today.
+  date: '2026-10-07'
+- breaking: false
+  highlights:
+  - Information on the security advisory for **Managed Kubernetes Worker Node Credential Exposure** is now available.
+  - Disclosed on July 16, 2026, this vulnerability affects Managed Kubernetes and caused worker nodes running Managed Kubernetes v1.33+ to expose
+    an internal administrative credential.
+  - '`space.vars.ionos_cloud` has applied updated Managed Kubernetes node images across all regions to mitigate the vulnerability.'
+  date: '2026-10-06'
+- breaking: false
+  highlights:
+  - A new tutorial shows how to export OpenClaw gateway telemetry to observability services through the community `otel-observability` plugin.
+  - The plugin configures each signal independently, so you can send metrics to the Monitoring Service, logs to the Logging Service, and traces
+    to the Tracing Service.
+  - The tutorial also provides a Grafana dashboard for the metrics, reporting token usage, implied cost, request latency, tool call activity,
+    and security guardrail signals.
+  date: '2026-10-13'
+- breaking: false
+  highlights:
+  - A new how‑to guide covers how to compile a minimal Linux kernel for Confidential VMs that removes console, input, serial, USB, and management‑channel
+    drivers at compile time.
+  - The guide includes kernel configuration using the Debian cloud baseline, package building, GRUB hardening, and post‑restart verification over
+    SSH.
+  - Validated on Debian 13 (Trixie) with kernel 6.12.101.
+  date: '2026-10-08'
+- breaking: false
+  highlights:
+  - Effective **January 12, 2027**, Microsoft ends extended support for **Windows Server 2016**.
+  - After this date, it will no longer be offered as a public image for new deployments.
+  date: '2026-10-05'
+- breaking: true
+  highlights:
+  - Effective **November 5, 2026**, the `password` property of the Cloud API v6 user management endpoint `PUT /um/users/{userId}` becomes read‑only
+    for existing users.
+  - A `PUT /um/users/{userId}` request that includes `password` returns an error stating that the field is immutable and must be removed from
+    the payload.
+  date: '2026-10-08'
+docs: https://docs.ionos.com/cloud/release-notes/october-2026.md
+note: 1 extracted row(s) were dropped because their quote was not on the page.

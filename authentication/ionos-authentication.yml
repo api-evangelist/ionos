@@ -1,0 +1,31 @@
+generated: '2026-10-13'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.ionos.com/cloud/ai/mcp-server/configuration/authentication.md
+sources:
+- https://docs.ionos.com/cloud/ai/mcp-server/configuration/authentication.md
+- https://docs.ionos.com/cloud/api-reference/databases/v2/authentication.md
+- https://docs.ionos.com/cloud/api-reference/databases/v2-1/authentication.md
+- https://docs.ionos.com/cloud/go/go-bundle/sdks/auth.md
+description: Authentication methods for IONOS APIs as documented.
+schemes:
+- type: http-bearer
+  name: Bearer token
+  evidence: 'All requests to the In-Memory DB v2 API require a Bearer token in the `Authorization` header:'
+  location: header
+  header: Authorization
+  how_to_obtain: Generate a token using the IONOS CLOUD Authentication API.
+- type: http-bearer
+  name: Bearer token
+  evidence: 'All requests to the MariaDB API require a Bearer token in the `Authorization` header:'
+  location: header
+  header: Authorization
+  how_to_obtain: Generate a token using the IONOS CLOUD Authentication API.
+- type: http-basic
+  name: Basic Authentication (SDK)
+  evidence: '### Basic Authentication * **Type**: HTTP basic authentication'
+  location: header
+  header: Authorization
+  how_to_obtain: Provide `IONOS_USERNAME` and `IONOS_PASSWORD` environment variables or pass them to the SDK configuration.
+docs: https://docs.ionos.com/cloud/ai/mcp-server/configuration/authentication.md
+note: 1 extracted row(s) were dropped because their quote was not on the page.

@@ -1,0 +1,2 @@
+Contact: mailto:security@ionos.com
+Encryption: https://keys.openpgp.org/search?q=security%40ionos.com

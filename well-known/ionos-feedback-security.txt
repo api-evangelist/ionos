@@ -1,0 +1,7 @@
+# In the event that you have discovered a technical vulnerability in Survalyzer,
+# we encourage you to report it directly to Survalyzer.
+
+Expires: 2026-11-08T23:00:01+00:00
+
+Contact: mailto:datenschutz@survalyzer.com
+Policy: https://survalyzer.com/coordinatedvulnerabilitydisclosurepolicy/

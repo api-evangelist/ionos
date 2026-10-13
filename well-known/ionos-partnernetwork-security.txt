@@ -1,0 +1,3 @@
+Contact: security@1und1.de
+Contact: security@ionos.com
+Encryption: https://keys.openpgp.org/search?q=security%401und1.de
