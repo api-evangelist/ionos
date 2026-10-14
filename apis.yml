@@ -38,16 +38,12 @@ maintainers:
   email: info@apis.io
 
 common:
+- type: IntegrationEdges
+  url: integrations/ionos-integration-edges.yml
+- type: Pricing
+  url: https://price-calculator.cloud.ionos.com/
 - type: Vendors
   url: vendors/ionos-vendors.yml
-- type: Spectral
-  url: rules/ionos-rules.yml
-- type: JSONLD
-  url: json-ld/ionos-context.jsonld
-- type: Vocabulary
-  url: vocabulary/ionos-vocabulary.yml
-- type: DataModel
-  url: data-model/ionos-data-model.yml
 - type: ChangeLog
   url: changelog/ionos-changelog.yml
 - type: Authentication
@@ -110,24 +106,6 @@ apis:
   description: Cloud API for managing IONOS resources
   humanURL: https://docs.ionos.com/cloud/api-reference
   aid: ionos:ionos-cloud-api
-- aid: ionos:ionos-api
-  name: IONOS API
-  description: 'IONOS API as documented publicly: 7 operations. Contract generated from the documentation by API Evangelist (2026-10-13); not
-
-    the provider''s own document.'
-  humanURL: https://api.ionos.com/docs/cloud/v6
-  baseURL: https://dcd.ionos.com
-  properties:
-  - type: OpenAPI
-    url: openapi/_ae-authored/ionos-openapi-generated.yml
-    x-provenance: generated
-  - type: JSONSchema
-    url: json-schema/ionos-get-cloud-databases-postgresql-api-v1-api-v1-apiid-response-schema.json
-  - type: JSONSchema
-    url: json-schema/ionos-get-telemetry-api-v1-query-range-response-schema.json
-  - type: JSONSchema
-    url: json-schema/ionos-get-datacenters-response-schema.json
-
 x-coverage:
   state: unreadable
   reason: no-machine-readable-spec

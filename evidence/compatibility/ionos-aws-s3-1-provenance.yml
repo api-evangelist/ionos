@@ -1,0 +1,14 @@
+fetched: '2026-10-14'
+method: fetched
+source: https://docs.ionos.com/cloud/backup-and-storage/ionos-object-storage/concepts/s3-api-compatibility.md
+page: https://docs.ionos.com/cloud/backup-and-storage/ionos-object-storage/concepts/s3-api-compatibility.md
+file: ionos-aws-s3-1.md
+bytes: 18192
+sha256: 9ba0c628e85b2bfe0fcb18961666f4b096295ac750a7e603216dfe309ac789cf
+anchor: amazon-web-services
+shape: aws-s3
+classification: declares-compatibility
+quote: The S3 (Simple Storage Service) API has been the global standard for object storage for many years. It provides
+  interoperability and compatibility of various object storage systems that adhere to this standard. <code class="expression">space.vars.ionos\_cloud\_object\_storage</code>
+  has one of the h
+note: text extracted from the provider's own page (tags stripped), saved for evidence

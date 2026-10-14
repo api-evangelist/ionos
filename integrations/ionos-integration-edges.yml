@@ -1,0 +1,100 @@
+generated: '2026-10-14'
+method: searched
+source:
+- https://zapier.com/apps/ionos/integrations
+- https://n8n.io/integrations/ionos/
+- https://composio.dev/toolkits/ionos
+- https://monid.ai/tools/ionos
+checked:
+- https://composio.dev/toolkits/ionos
+- https://monid.ai/tools/ionos
+- https://n8n.io/integrations/ionos/
+- https://zapier.com/apps/ionos/integrations
+summary: null
+marketplace_apps: []
+edges:
+- partner_name: Amazon Web Services
+  partner: amazon-web-services
+  partner_match: shape-anchor
+  channel: provider-built
+  relationship: compatible
+  direction: provider-built
+  shape: aws-s3
+  type: docs
+  degree: declared-subset
+  evidence: https://docs.ionos.com/cloud/backup-and-storage/ionos-object-storage/concepts/s3-api-compatibility.md
+  evidence_kind: own-docs
+  evidence_file: https://github.com/api-evangelist/ionos/blob/main/evidence/compatibility/ionos-aws-s3-1.md
+  quote: The S3 (Simple Storage Service) API has been the global standard for object storage for many years. It
+    provides interoperability and compatibility of various object storage systems that adhere to this standard.
+    <code class="expression">spac
+  supported_operations:
+  - AbortMultipartUpload
+  - CompleteMultipartUpload
+  - CopyObject
+  - CreateBucket
+  - CreateMultipartUpload
+  - DeleteBucket
+  - DeleteBucketCors
+  - DeleteBucketEncryption
+  - DeleteBucketLifecycle
+  - DeleteBucketPolicy
+  - DeleteBucketReplication
+  - DeleteBucketTagging
+  - DeleteBucketWebsite
+  - DeleteObject
+  - DeleteObjectTagging
+  - DeleteObjects
+  - DeletePublicAccessBlock
+  - GetBucketAcl
+  - GetBucketCors
+  - GetBucketEncryption
+  - GetBucketLifecycleConfiguration
+  - GetBucketLocation
+  - GetBucketLogging
+  - GetBucketPolicy
+  - GetBucketReplication
+  - GetBucketTagging
+  - GetBucketVersioning
+  - GetBucketWebsite
+  - GetObject
+  - GetObjectAcl
+  - GetObjectLegalHold
+  - GetObjectLockConfiguration
+  - GetObjectRetention
+  - GetObjectTagging
+  - GetPublicAccessBlock
+  - HeadBucket
+  - HeadObject
+  - ListBuckets
+  - ListMultipartUploads
+  - ListObjectVersions
+  - ListObjects
+  - ListObjectsV2
+  - ListParts
+  - PutBucketAcl
+  - PutBucketCors
+  - PutBucketEncryption
+  - PutBucketLifecycleConfiguration
+  - PutBucketLogging
+  - PutBucketPolicy
+  - PutBucketReplication
+  - PutBucketTagging
+  - PutBucketVersioning
+  - PutBucketWebsite
+  - PutObject
+  - PutObjectAcl
+  - PutObjectLegalHold
+  - PutObjectLockConfiguration
+  - PutObjectRetention
+  - PutObjectTagging
+  - PutPublicAccessBlock
+  - SelectObjectContent
+  - UploadPart
+  unsupported_operations:
+  - GetBucketNotificationConfiguration
+  - PutBucketNotificationConfiguration
+  supported_share: 0.925
+  detected_by: sweep-shape-compat.py
+  first_seen: '2026-10-14'
+templates: []
