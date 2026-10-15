@@ -115,7 +115,7 @@
     published: '2026-09-30T08:23:22.972Z'
     matched_on: publisher-email
     builder: provider (package published from the provider's own domain)
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
 - slug: ionos-pipedream
   label: Pipedream
@@ -141,5 +141,5 @@
     actions: true
     sources: false
     builder: Pipedream repo (component)
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
