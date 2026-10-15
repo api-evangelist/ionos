@@ -90,3 +90,56 @@
     detected: '2026-10-15'
   status: not-a-workflow
   arazzo: null
+- slug: ionos-n8n
+  label: n8n
+  partner: n8n
+  partner_name: n8n
+  type: marketplace
+  marketplace: n8n-community
+  channel: open-source-node
+  evidence: https://www.npmjs.com/package/@ionos-cloud/n8n-nodes-ionos-cloud
+  source: edge
+  relationship: ipaas-bridge
+  contract_reference:
+    register: n8n community nodes (npm keyword n8n-community-node-package)
+    spec_file: null
+    role: ipaas-connector:n8n-community
+    registered_name: '@ionos-cloud/n8n-nodes-ionos-cloud'
+    matched_domain: ionos.com
+    matched_by: domain
+    detected_by: sweep-workflow-automation.py
+    detected: '2026-10-15'
+    signal_note: one edge per (provider, platform); actions, triggers and usage counts are context, never read
+    package: '@ionos-cloud/n8n-nodes-ionos-cloud'
+    version: 2.0.3
+    published: '2026-09-30T08:23:22.972Z'
+    matched_on: publisher-email
+    builder: provider (package published from the provider's own domain)
+  status: pending-partner-spec
+  arazzo: null
+- slug: ionos-pipedream
+  label: Pipedream
+  partner: pipedream
+  partner_name: Pipedream
+  type: marketplace
+  marketplace: pipedream-components
+  channel: open-source-node
+  evidence: https://github.com/PipedreamHQ/pipedream/tree/94800dd6de6640b942c65ea7ee655f71ac56d438/components/ionos_hosting_services
+  source: edge
+  relationship: ipaas-bridge
+  contract_reference:
+    register: Pipedream components (PipedreamHQ/pipedream components/)
+    spec_file: null
+    role: ipaas-connector:pipedream
+    registered_name: ionos hosting services
+    matched_domain: ionos.com
+    matched_by: domain
+    detected_by: sweep-workflow-automation.py
+    detected: '2026-10-15'
+    signal_note: one edge per (provider, platform); actions, triggers and usage counts are context, never read
+    app_slug: ionos_hosting_services
+    actions: true
+    sources: false
+    builder: Pipedream repo (component)
+  status: pending-partner-spec
+  arazzo: null

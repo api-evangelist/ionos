@@ -8,10 +8,12 @@ source:
 checked:
 - https://composio.dev/toolkits/ionos
 - https://focus.finops.org/data-generators/
+- https://github.com/PipedreamHQ/pipedream/tree/94800dd6de6640b942c65ea7ee655f71ac56d438/components/
 - https://github.com/cncf/k8s-conformance
 - https://github.com/cncf/landscape
 - https://monid.ai/tools/ionos
 - https://n8n.io/integrations/ionos/
+- https://registry.npmjs.org/-/v1/search?text=keywords:n8n-community-node-package
 - https://zapier.com/apps/ionos/integrations
 summary: null
 marketplace_apps: []
@@ -200,5 +202,58 @@ edges:
     detected_by: sweep-cloud-native.py
     detected: '2026-10-15'
   detected_by: sweep-cloud-native.py
+  first_seen: '2026-10-15'
+- partner_name: n8n
+  partner: n8n
+  partner_match: aggregator
+  type: marketplace
+  marketplace: n8n-community
+  channel: open-source-node
+  relationship: ipaas-bridge
+  direction: provider-built
+  evidence: https://www.npmjs.com/package/@ionos-cloud/n8n-nodes-ionos-cloud
+  category: null
+  contract_reference:
+    register: n8n community nodes (npm keyword n8n-community-node-package)
+    spec_file: null
+    role: ipaas-connector:n8n-community
+    registered_name: '@ionos-cloud/n8n-nodes-ionos-cloud'
+    matched_domain: ionos.com
+    matched_by: domain
+    detected_by: sweep-workflow-automation.py
+    detected: '2026-10-15'
+    signal_note: one edge per (provider, platform); actions, triggers and usage counts are context, never read
+    package: '@ionos-cloud/n8n-nodes-ionos-cloud'
+    version: 2.0.3
+    published: '2026-09-30T08:23:22.972Z'
+    matched_on: publisher-email
+    builder: provider (package published from the provider's own domain)
+  detected_by: sweep-workflow-automation.py
+  first_seen: '2026-10-15'
+- partner_name: Pipedream
+  partner: pipedream
+  partner_match: aggregator
+  type: marketplace
+  marketplace: pipedream-components
+  channel: open-source-node
+  relationship: ipaas-bridge
+  direction: third-party
+  evidence: https://github.com/PipedreamHQ/pipedream/tree/94800dd6de6640b942c65ea7ee655f71ac56d438/components/ionos_hosting_services
+  category: null
+  contract_reference:
+    register: Pipedream components (PipedreamHQ/pipedream components/)
+    spec_file: null
+    role: ipaas-connector:pipedream
+    registered_name: ionos hosting services
+    matched_domain: ionos.com
+    matched_by: domain
+    detected_by: sweep-workflow-automation.py
+    detected: '2026-10-15'
+    signal_note: one edge per (provider, platform); actions, triggers and usage counts are context, never read
+    app_slug: ionos_hosting_services
+    actions: true
+    sources: false
+    builder: Pipedream repo (component)
+  detected_by: sweep-workflow-automation.py
   first_seen: '2026-10-15'
 templates: []
