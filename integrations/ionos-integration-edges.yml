@@ -25,6 +25,8 @@ checked:
 - https://www.peeringdb.com/api/fac
 - https://www.peeringdb.com/api/ix
 - https://www.peeringdb.com/api/net
+- opentofu/integrations/opentofu-integration-edges.yml
+- terraform/integrations/terraform-integration-edges.yml
 summary: null
 marketplace_apps: []
 edges:
@@ -169,21 +171,6 @@ edges:
     detected: '2026-10-18'
   detected_by: sweep-domains-dns.py
   first_seen: '2026-10-18'
-- partner_name: n8n (n8n-community)
-  partner: n8n
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: n8n-community
-  evidence: https://www.npmjs.com/package/@ionos-cloud/n8n-nodes-ionos-cloud
-  mirror_of: n8n/integrations/n8n-integration-edges.yml
-  apps: []
-  listing_count: 1
-  detected: '2026-10-19'
-  detected_by: mirror-platform-listings.py
 - partner_name: CNCF (Cloud Native Landscape)
   partner: cncf
   partner_match: register
@@ -405,4 +392,55 @@ edges:
     identity_source: peeringdb net website by the participant's ASN (labelled provenance step)
   detected_by: sweep-network-edge.py
   first_seen: '2026-10-20'
+- partner_name: n8n (n8n-community)
+  partner: n8n
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: n8n-community
+  evidence: https://www.npmjs.com/package/@ionos-cloud/n8n-nodes-ionos-cloud
+  mirror_of: n8n/integrations/n8n-integration-edges.yml
+  apps: []
+  listing_count: 1
+  detected: '2026-10-19'
+  detected_by: mirror-platform-listings.py
+- partner_name: OpenTofu (opentofu-registry)
+  partner: opentofu
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: opentofu-registry
+  evidence: https://search.opentofu.org/provider/ionos-developer/ionosdeveloper
+  mirror_of: opentofu/integrations/opentofu-integration-edges.yml
+  apps:
+  - ionos-developer/ionosdeveloper
+  listing_count: 1
+  detected: '2026-10-21'
+  detected_by: mirror-platform-listings.py
+  category: infrastructure-as-code provider registry listing
+- partner_name: Terraform (terraform-registry)
+  partner: terraform
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: terraform-registry
+  evidence: https://registry.terraform.io/providers/ionos-developer/ionosdeveloper
+  mirror_of: terraform/integrations/terraform-integration-edges.yml
+  apps:
+  - ionos-developer/ionosdeveloper
+  listing_count: 1
+  detected: '2026-10-21'
+  detected_by: mirror-platform-listings.py
+  category: infrastructure-as-code provider registry listing
+  badges:
+  - Verified publisher (Terraform partner tier)
 templates: []
